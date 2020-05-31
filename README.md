@@ -1,8 +1,9 @@
-#KBeacon Android SDK Instruction DOC（English）
+#KBeacon Blue Charm Beacons' Android SDK for BC011 and BC021 KBeacon Devices - DOC（English）
 
 ----
 ## 1. Introduction
 **Welcome to Blue Charm Beacons' SDK library for our Blue Charm KBeacon devices on GitHub. At the time of this upload, our line of "KBeacon" devices include the BC011 Multi-Beacon and BC021 Multi-Beacon with Accelerometer, but we may add others later.** 
+
 We provide AAR format SDK library on Github. You can find it in directory:   
 ./aar-sdk/kbeaconlib-release-xxx.aar
 
