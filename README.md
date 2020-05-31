@@ -284,8 +284,8 @@ mBeacon.disconnect();
 
 ### 4.3 Configure parameters
 #### 4.3.1 Advertisement type
-KBeacon devices can support broadcasting multiple type advertisement packets in parallel.  
-For example, advertisement period was set to 500ms. Advertisement type was set to “iBeacon + URL + UID + KSensor”, then the device will send advertisement packet like follow.   
+Blue Charm Beacons' KBeacon devices can support broadcasting multiple type advertisement packets in parallel.  
+For example, advertisement period was set to 500ms. Advertisement type was set to “iBeacon + URL + UID + KSensor”, then the device will send advertisement packet as follows:   
 
 |Time(ms)|0|500|1000|1500|2000|2500|3000|3500
 |----|----|----|----|----|----|----|----|----
@@ -293,7 +293,7 @@ For example, advertisement period was set to 500ms. Advertisement type was set t
 
 
 If the advertisement type contains TLM and other types, the KBeacon will send 1 TLM advertisement every 10 advertisement packets by default configuration.
-For example: advertisement period was set to 500ms. Advertisement type was set to “URL + TLM”, and then the advertisement packet is like follow
+For example: advertisement period was set to 500ms. Advertisement type was set to “URL + TLM”, and then the advertisement packet will be as follows:s
 
 |Time|0|500|1000|1500|2000|2500|3000|3500|4000|4500|5000
 |----|----|----|----|----|----|----|----|----|----|----|----
@@ -304,7 +304,7 @@ For example: advertisement period was set to 500ms. Advertisement type was set t
   For the advertisement period, Apple has some suggestions that make the device more easily discovered by IOS phones. (The suggest value was: 152.5 ms; 211.25 ms; 318.75 ms; 417.5 ms; 546.25 ms; 760 ms; 852.5 ms; 1022.5 ms; 1285 ms). For more information, please refer to Section 3.5 in "Bluetooth Accessory Design Guidelines for Apple Products". The document link: https://developer.apple.com/accessories/Accessory-Design-Guidelines.pdf.
 
 #### 4.3.2 Get device parameters
-After the app connect to KBeacon success. The KBeacon will automatically read current parameters from KBeacon device. so the app can update UI and show the parameters to user after connection setup.  
+After the app connects to the KBeacon device successfully, the app will automatically read current parameters from the KBeacon device. so the app can update the UI and show the parameters to user after connection setup.  
  ```Java
 private KBeacon.ConnStateDelegate connectionDelegate = new KBeacon.ConnStateDelegate()
 {
@@ -403,7 +403,7 @@ public void updateDeviceToView()
 
 #### 4.3.3 Update advertisement parameters
 
-After app connects to device success, the app can update parameters of device.
+After the app connects to device successfully, the app can update parameters of device.
 
 ##### 4.3.3.1 Update common parameters
 The app can modify the basic parameters of Blue Charm Beacons' KBeacon through the KBCfgCommon class. The KBCfgCommon has follow parameters:
